@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import "_reset";
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+@import "_core";
+
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/classes";
+@import "blocks/instructors";
+@import "blocks/team";
+@import "blocks/logo";
+@import "blocks/subscribe";
+@import "blocks/contact";
+@import "blocks/footer";

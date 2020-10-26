@@ -1,0 +1,146 @@
+header {
+  background: url("../img/home/header-bg.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .header-wrap {
+    .header-menu {
+      .navbar-toggler {
+        color: $blue;
+      }
+
+      .navbar-expand-md {
+        transition: all 0.3s;
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+
+          li {
+            a {
+              font-size: 18px;
+              font-weight: 600;
+              color: $blue;
+              font-family: "Poppins", sans-serif;
+            }
+
+            &:after {
+              content: "";
+              display: block;
+              width: 100%;
+              background-color: $blue;
+              height: 1px;
+              transform: scale(0);
+              transition: all 0.3s;
+            }
+
+            &:hover::after {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 20px 20px 440px 20px;
+      margin-top: 5%;
+      transition: all 0.3s;
+
+      h1:first-child {
+        margin-right: 65px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    .header-wrap {
+      .header-menu {
+        .navbar-expand-md {
+          background: rgba(255, 255, 255, 0.5);
+        }
+
+        .navbar-collapse {
+          text-align: right;
+          right: 0;
+          top: 91px;
+          flex-basis: 100%;
+          //background: rgba(255, 255, 255, 0.5);
+          width: 100%;
+          padding-right: 12px;
+        }
+      }
+
+      .header-text {
+        margin-top: 10%;
+        padding-bottom: 200px;
+
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  header {
+    .header-wrap {
+      .header-menu {
+        .navbar-expand {
+          .navbar-collapse {
+            ul {
+              li {
+                a {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .header-text {
+        padding-bottom: 150px;
+
+        h1 {
+          font-size: 40px;
+        }
+        h1:first-child {
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  header {
+    .header-wrap {
+      .navbar {
+        justify-content: flex-end;
+        .navbar-brand {
+          display: none;
+        }
+      }
+
+      .navbar-expand-md {
+        padding: 10px 15px;
+      }
+
+      .header-text {
+        margin-top: 0;
+
+        h1 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
