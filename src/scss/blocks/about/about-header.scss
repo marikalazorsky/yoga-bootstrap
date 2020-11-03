@@ -1,0 +1,117 @@
+.content {
+    .about-block-wrap {
+        padding: 20px;
+        transition: all 0.3s;
+
+        .about-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            transition: all 0.3s;
+        
+            .about-block-text {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                flex-basis: 43%;
+                transition: all 0.3s;
+        
+                p {
+                    margin-bottom: 35px;
+                }
+            }
+        
+            .about-block-image {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+    .about-quote {
+        background: url('../img/about/quote.jpg') center no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        transition: all 0.3s;
+
+        .blockquote {
+            display: flex;
+            flex-direction: column;
+            padding: 170px 0 100px;
+            max-width: 620px;
+            transition: all 0.3s;
+
+            p {
+                font-family: droid-serif, serif;
+                font-size: 24px;
+                font-style: italic;
+                line-height: 36px;
+                color: $white;
+                transition: all 0.3s;
+            }
+
+            footer {
+                background-color: transparent;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                color: $white;
+                margin-top: 35px;
+            }
+            
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .content {
+        .about-block-wrap {
+            padding-top: 30px;
+
+            .about-block {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                .container {
+                    .row {
+                        .about-block-text {
+                            flex-basis: 100%;
+                        }
+                        .about-block-image {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .about-quote {
+            .blockquote.text-center {
+                padding: 70px 20px 50px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .content {
+        .about-quote {
+            .blockquote {
+                p {
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                footer {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

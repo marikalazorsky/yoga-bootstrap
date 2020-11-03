@@ -4,9 +4,6 @@
  * Основные стили
  **/
 
-body {
-}
-
 p {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -55,6 +52,50 @@ h4 {
   font-weight: 600;
   color: $white;
   margin-bottom: 25px;
+}
+
+.header-rest {
+  background: url("../img/about/header-bg.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.block-header-wrap {
+  padding: 0 20px;
+}
+
+.block-header-text {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  span {
+    font-size: 14px;
+    color: $blue;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .block-header-text {
+    min-height: 250px;
+    transition: all 0.3s;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .block-header-text {
+    min-height: 200px;
+    transition: all 0.3s;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .block-header-text {
+    justify-content: start;
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 420px) {

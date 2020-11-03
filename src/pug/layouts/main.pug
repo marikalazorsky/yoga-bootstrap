@@ -12,17 +12,16 @@ head
   script(src='https://kit.fontawesome.com/9d684a1f64.js' crossorigin='anonymous')
 .container
   header.header-rest
-    .header-wrap.wrap
+    .block-header-wrap.wrap.header-wrap
       include ./../sections/menu.pug 
 
-      .header-text
+      .block-header-text
         block header-content
         
   // header
 
   .content
-    .content-wrap.wrap
-        block content
+    block body-content
            
 
     // content
