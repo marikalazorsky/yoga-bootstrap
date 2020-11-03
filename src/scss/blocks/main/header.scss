@@ -1,8 +1,4 @@
 header {
-  background: url("../img/home/header-bg.jpg") center no-repeat;
-  background-size: cover;
-  position: relative;
-
   .header-wrap {
     .header-menu {
       .navbar-toggler {
@@ -56,6 +52,12 @@ header {
       }
     }
   }
+}
+
+.header-main {
+  background: url("../img/home/header-bg.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 @media only screen and (max-width: 768px) {

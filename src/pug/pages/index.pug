@@ -1,0 +1,170 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;600;700&display=swap' rel='stylesheet')
+  link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
+  link(rel='stylesheet' href='css/style.css' type='text/css')
+  title Wand Yoga
+  script(src='https://kit.fontawesome.com/9d684a1f64.js' crossorigin='anonymous')
+.container
+  header.header-main
+    .header-wrap.wrap
+      include ./../sections/menu.pug 
+      .header-text
+        h1 Be Happy
+        h1 Be Healthy
+        h1 Be Infinity
+  // header
+  .about
+    .about-wrap.wrap
+      .container
+        .row.justify-content-around
+          .col-lg-6
+            h2 Everyone&apos;s Yoga
+            p
+              | We offers over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. We believe that yoga should be accessible to everyone and our classes are designed to give you an in-studio experience, at an affordable price, in your own home.
+            .embed-responsive.embed-responsive-16by9.mt-5
+              iframe(width='560' height='315' src='https://www.youtube.com/embed/fAs3Geva8D4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              #videoPlayBtn
+          .col-lg-5
+            .about-item
+              img(src='img/home/about-icon-1.png' alt='item')
+              .item-text
+                span Balance Body &amp; Mind
+                p
+                  | Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry&apos;s standard.
+            .about-item
+              img(src='img/home/about-icon-2.png' alt='item')
+              .item-text
+                span Weight Loss
+                p
+                  | Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry&apos;s standard.
+            .about-item
+              img(src='img/home/about-icon-3.png' alt='item')
+              .item-text
+                span Meditation Practice
+                p
+                  | Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry&apos;s standard.
+            .about-item
+              img(src='img/home/about-icon-4.png' alt='item')
+              .item-text
+                span Yoga is a way to freedom
+                p
+                  | Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry&apos;s standard.
+            .about-item
+              img(src='img/home/about-icon-5.png' alt='item')
+              .item-text
+                span Increased energy
+                p
+                  | Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry&apos;s standard.
+  // /.about
+  include ./../sections/classes.pug 
+  // /.classes
+  .instructors
+    .instructors-wrap.wrap
+      h3 The Most Experienced Yoga Instructors
+      p
+        | Our mission is to bring the communities of Brookhaven, Dunwoody, Old Fourth Ward, and Buckhead a knowledgeable, welcoming, and comfortable place to practice yoga and to enhance your well-being and general approach to holistic health.
+      span Meet Our Teacher
+      .arrow
+        i.fas.fa-arrow-circle-down
+  // /.instructors
+  .team
+    .team-wrap.wrap
+      .container
+        .row
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-1.png' alt='person')
+              .person-info
+                span.person-name Becky Nickerson
+                p Owner/Lead Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-2.png' alt='person')
+              .person-info
+                span.person-name Taylor Harkness
+                p Owner/Lead Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-3.png' alt='person')
+              .person-info
+                span.person-name Natalie Skubic
+                p Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-4.png' alt='person')
+              .person-info
+                span.person-name Meredith Hesse
+                p Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-5.png' alt='person')
+              .person-info
+                span.person-name Meredith Hesse
+                p Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-6.png' alt='person')
+              .person-info
+                span.person-name Ashley Lorenzo
+                p Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-7.png' alt='person')
+              .person-info
+                span.person-name Jessica Calderon
+                p Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-8.png' alt='person')
+              .person-info
+                span.person-name Doug Johnson
+                p Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-9.png' alt='person')
+              .person-info
+                span.person-name Sharon Caplan
+                p Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-10.png' alt='person')
+              .person-info
+                span.person-name Erin Rogers 
+                p Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-11.png' alt='person')
+              .person-info
+                span.person-name Jessica Taylor
+                p Instructor
+          .col-lg-3.col-md-4.col-sm-6
+            .team-person
+              img(src='img/home/name-12.png' alt='person')
+              .person-info
+                span.person-name Todd Delaune 
+                p Instructor
+  // /.team
+  .logo
+    .logo-wrap.wrap
+      .container
+        .row
+          .col-sm-2.container-fluid
+            img(src='img/home/icon-1.png' alt='logo')
+          .col-sm-2.container-fluid
+            img(src='img/home/icon-2.png' alt='logo')
+          .col-sm-2.container-fluid
+            img(src='img/home/icon-3.png' alt='logo')
+          .col-sm-2.container-fluid
+            img(src='img/home/icon-4.png' alt='logo')
+          .col-sm-2.container-fluid
+            img(src='img/home/icon-5.png' alt='logo')
+  // /.logo
+  include ./../sections/footer.pug
+script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' crossorigin='anonymous')
+script(src='js/main.js')

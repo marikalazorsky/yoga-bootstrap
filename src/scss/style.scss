@@ -6,12 +6,14 @@
 @import "_mixins";
 @import "_core";
 
-@import "blocks/header";
-@import "blocks/about";
-@import "blocks/classes";
-@import "blocks/instructors";
-@import "blocks/team";
-@import "blocks/logo";
-@import "blocks/subscribe";
-@import "blocks/contact";
-@import "blocks/footer";
+@import "blocks/main/header";
+@import "blocks/main/about";
+@import "blocks/main/classes";
+@import "blocks/main/instructors";
+@import "blocks/main/team";
+@import "blocks/main/logo";
+@import "blocks/main/subscribe";
+@import "blocks/main/contact";
+@import "blocks/main/footer";
+
+@import "blocks/about/header";

@@ -1,0 +1,17 @@
+.header {
+    max-height: 500px;
+
+    .header-wrap {
+        min-height: 500px;
+        
+        .header-text {
+            
+        }
+    }
+}
+
+.header-rest {
+    //background: url("../img/home/header-bg.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
