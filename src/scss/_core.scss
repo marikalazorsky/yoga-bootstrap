@@ -27,7 +27,8 @@ img {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -52,6 +53,14 @@ h4 {
   font-weight: 600;
   color: $white;
   margin-bottom: 25px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: $blue;
+  line-height: 24px;
+  display: block;
 }
 
 .header-rest {
