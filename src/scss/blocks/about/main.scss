@@ -96,6 +96,105 @@
             }
         }
     }
+
+    .about-testimonials {
+        background-color: $about;
+        background-size: cover;
+        position: relative;
+        
+
+        .about-testimonials-wrap {
+            padding: 125px 20px;
+            transition: all 0.3s;
+
+            #aboutCarousel {
+                padding-bottom: 35px;
+                text-align: center;
+                margin-bottom: 65px;
+
+                .carousel-indicators {
+                    li {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                        margin-left: 5px;
+                        background-color: #ced8f5;
+                    }
+                    .active {
+                        background-color: $blue;
+                    }
+                }
+
+                .carousel-inner {
+                    margin-bottom: 20px;
+
+                    .carousel-item {
+                        .item-title,
+                        .testimonials-title {
+                            font-family: "Poppins", sans-serif;
+                            font-size: 16px;
+                            color: $blue;
+                            line-height: 24px;
+                            display: block;
+                            font-weight: 700;
+                        } 
+                        .item-title {
+                            margin-bottom: 15px;
+                        }
+
+                        .testimonials-title {
+                            font-size: 14px;
+                            margin-top: 25px;
+                        }
+
+                        .item-text {
+                            font-family: "Lato", sans-serif;
+                            font-size: 14px;
+                            color: $blue;
+                            max-width: 600px;
+                            margin: 0 auto;
+                        }
+
+                        .testimonials-author {
+                            font-family: "Lato", sans-serif;
+                            font-size: 12px;
+                            color: $blue;
+                        }
+
+                        .carousel-img {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+
+            .about-countdown {
+                .container {
+                    .row {
+                        .col-sm-3 {
+                            text-align: center;
+
+                            span {
+                                font-family: droid-serif, serif;
+                                font-size: 42px;
+                                line-height: 30px;
+                                color: $blue;
+                                display: inline-block;
+                                margin-bottom: 15px;
+                            }
+
+                            p {
+                                font-family: "Lato", sans-serif;
+                                font-size: 14px;
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -122,6 +221,12 @@
                         }
                     }
                 }          
+            }
+        }
+
+        .about-testimonials {
+            .about-testimonials-wrap {
+                padding: 50px 20px;
             }
         }
     }
@@ -153,6 +258,32 @@
         .about-quote {
             .blockquote.text-center {
                 padding: 70px 20px 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .content {
+        .about-testimonials {
+            .about-testimonials-wrap {
+                padding-bottom: 30px;
+
+                #aboutCarousel {
+                    padding-bottom: 35px;
+                    text-align: center;
+                    margin-bottom: 35px;
+                }
+                
+                .about-countdown {
+                    .container {
+                        .row {
+                            .col-sm-3 {
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
