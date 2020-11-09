@@ -1,0 +1,29 @@
+mixin class-page(infoTime, infoInstructor, infoLevel, text, video)
+    .class-main
+        .class-wrap.wrap
+            .container
+                .row
+                    .col-xl-6.info-text
+                        .text-title
+                            .card-info
+                                i.far.fa-clock
+                                span.info-time
+                                    | #{infoTime}
+                            .card-info
+                                i.fas.fa-user
+                                span.info-instructor
+                                    | #{infoInstructor}
+                            .card-info
+                                i.fas.fa-level-up-alt
+                                span.info-level
+                                    | #{infoLevel}
+                            .card-info
+                                i.fas.fa-share-alt
+                                span.info-share
+                                    | Share
+                        .text-main
+                            | #{text}
+                    .col-xl-6.info-video
+                        iframe(src='https://www.youtube.com/embed/' + video, frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                        #videoPlayBtn
+

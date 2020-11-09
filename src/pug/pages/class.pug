@@ -1,0 +1,37 @@
+extends ./../layouts/main.pug
+include ./../mixins/class-page.pug
+include ./../mixins/benefits.pug
+
+block variables 
+    - const title = "Class";
+
+block header-content
+    h3 Handstand Variations and Transitions
+    span Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with...
+
+
+
+block body-content
+    +class-page('7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'The third part of our 6-class beginner series was created specifically for first-time yogis. In this 30-minute class, Simon introduces key standing poses. Even if you have never stepped foot on a yoga mat, you will learn basic alignment in this accessible introduction.', 'MWZf-lQt_2s')
+
+    .classes-benefits
+        .classes-wrap.wrap
+            .benefits-block.text-center
+                h2 Your Benefits
+                .container
+                    .row
+                        .col-xl-4.col-md-6
+                            +benefits('Balance Body & Mind', 'Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry´s standard.')
+                        .col-xl-4.col-md-6.active
+                            +benefits('Weight Loss', 'Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry´s standard.')
+                        .col-xl-4.col-md-6
+                            +benefits('Meditation Practice', 'Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry´s standard.')
+                        .col-xl-4.col-md-6
+                            +benefits('Yoga is a way to freedom', 'Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry´s standard.')
+                        .col-xl-4.col-md-6
+                            +benefits('Increased energy', 'Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry´s standard.')
+    .classes.single-class-bg
+        .classes-wrap.wrap
+            .classes-top.text-center
+                h2 Related Classes
+                include ./../sections/classes-section.pug

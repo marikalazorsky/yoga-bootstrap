@@ -1,0 +1,131 @@
+.classes {
+  background: url("../img/home/classes-bg.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .classes-wrap {
+    padding: 120px 20px;
+    background: url("../img/home/Classes-flower.png") top center no-repeat;
+
+    .classes-top {
+  
+
+      .classes-bottom {
+        padding-top: 80px;
+        
+        .container {
+          .row {
+            .col-lg-3.col-md-6 {
+              a {
+                transition: all 0.5s;
+        
+                .card {
+                  border: none;
+                  background: rgba(255, 255, 255, 0);
+                  cursor: pointer;
+                  transition: all 0.5s;
+        
+                  img {
+                    border-radius: 10px;
+                  }
+        
+                  .card-body {
+                    padding: 32px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: start;
+        
+                    .card-title {
+                      margin-bottom: 22px;
+                      min-height: 50px;
+                    }
+        
+                    .card-body_bottom {
+                      display: flex;
+                      flex-direction: column;
+                     
+        
+                      .card-info {
+                        margin-bottom: 15px;
+        
+                        &:last-child {
+                          margin-bottom: 0;
+                        }
+        
+                        .far,
+                        .fas {
+                          color: $blue;
+                          margin-right: 12px;
+                          font-size: 13px;
+                        }
+        
+                        span {
+                          color: $light-gray;
+                        }
+                      }
+        
+                      .card-text {
+                        margin-top: 25px;
+                      }
+                    }
+                  }
+                }
+        
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .classes {
+    .classes-wrap {
+      padding-bottom: 30px;
+
+      .classes-top {
+        padding-bottom: 30px;
+
+        .classes-bottom {
+          .container {
+            .row {
+              .col-md-6 {
+                .card {
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .classes {
+    .classes-wrap {
+      padding: auto 20px;
+
+      h2 {
+        font-size: 44px;
+      }
+
+      .col-lg-3,
+      .col-sm-6 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

@@ -59,9 +59,13 @@ head
                 span Increased energy
                 p
                   | Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry&apos;s standard.
-  // /.about
-  include ./../sections/classes.pug 
-  // /.classes
+  //about
+  .classes
+    .classes-wrap.wrap
+      .classes-top.text-center
+        h2 Our Classes
+        include ./../sections/classes-section.pug
+  //classes
   .instructors
     .instructors-wrap.wrap
       h3 The Most Experienced Yoga Instructors
@@ -70,7 +74,7 @@ head
       span Meet Our Teacher
       .arrow
         i.fas.fa-arrow-circle-down
-  // /.instructors
+  //instructors
   .team
     .team-wrap.wrap
       .container
@@ -147,7 +151,7 @@ head
               .person-info
                 span.person-name Todd Delaune 
                 p Instructor
-  // /.team
+  //team
   .logo
     .logo-wrap.wrap
       .container
@@ -162,7 +166,7 @@ head
             img(src='img/home/icon-4.png' alt='logo')
           .col-sm-2.container-fluid
             img(src='img/home/icon-5.png' alt='logo')
-  // /.logo
+  //logo
   include ./../sections/footer.pug
 script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
 script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')

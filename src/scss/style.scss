@@ -6,14 +6,16 @@
 @import "_mixins";
 @import "_core";
 
-@import "blocks/main/header";
-@import "blocks/main/about";
-@import "blocks/main/classes";
-@import "blocks/main/instructors";
-@import "blocks/main/team";
-@import "blocks/main/logo";
-@import "blocks/main/subscribe";
-@import "blocks/main/contact";
-@import "blocks/main/footer";
+@import "blocks/home/header";
+@import "blocks/home/about";
+@import "blocks/home/classes";
+@import "blocks/home/instructors";
+@import "blocks/home/team";
+@import "blocks/home/logo";
+@import "blocks/home/subscribe";
+@import "blocks/home/contact";
+@import "blocks/home/footer";
 
 @import "blocks/about/main";
+@import "blocks/classes/main";
+@import "blocks/class/main";

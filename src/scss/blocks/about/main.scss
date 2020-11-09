@@ -90,6 +90,11 @@
                             .item-titel {
                                 margin-bottom: 27px;
                             }
+
+                            &:hover {
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -163,7 +168,7 @@
                         }
 
                         .carousel-img {
-                            margin-top: 30px;
+                            margin-bottom: 30px;
                         }
                     }
                 }

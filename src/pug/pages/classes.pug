@@ -1,7 +1,42 @@
 extends ./../layouts/main.pug
+include ./../mixins/single-class.pug
 
 block variables 
     - const title = "Classes";
 
 block header-content
     h2 Classes
+    span Welcome To Wand Yoga Studio
+
+block body-content
+    .classes-wrap.wrap
+        .container
+            .row
+                .col-lg-3.col-md-6
+                    +single-class('class-1.jpg', 'Seated and Supine Poses for Beginners', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'We welcome you to the part 5 of our beginner series with Simon Park and Lousisse Miller!')
+                .col-lg-3.col-md-6
+                    +single-class('class-2.jpg', 'Work Towards Compass Pose', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).')
+                .col-lg-3.col-md-6
+                    +single-class('class-3.jpg', 'Handstand Variations and Transitions', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!')
+                .col-lg-3.col-md-6
+                    +single-class('class-4.jpg', 'Advanced Backbending', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ...')
+        .container
+            .row
+                .col-lg-3.col-md-6
+                    +single-class('class-5.jpg', 'Seated and Supine Poses for Beginners', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Welcome to part 5 of our beginner series with Simon Park!')
+                .col-lg-3.col-md-6
+                    +single-class('class-6.jpg', 'Work Towards Compass Pose', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).')
+                .col-lg-3.col-md-6
+                    +single-class('class-7.jpg', 'Handstand Variations and Transitions', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!')
+                .col-lg-3.col-md-6
+                    +single-class('class-8.jpg', 'Advanced Backbending', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ...')
+        .container
+            .row
+                .col-lg-3.col-md-6
+                    +single-class('class-9.jpg', 'Seated and Supine Poses for Beginners', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'We welcome you to the part 5 of our beginner series with Simon Park and Lousisse Miller!')
+                .col-lg-3.col-md-6
+                    +single-class('class-10.jpg', 'Work Towards Compass Pose', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).')
+                .col-lg-3.col-md-6
+                    +single-class('class-11.jpg', 'Handstand Variations and Transitions', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!')
+                .col-lg-3.col-md-6
+                    +single-class('class-12.jpg', 'Advanced Backbending', '7:00 am - 11:00 am', 'Simon Park', 'Advanced', 'Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ...')

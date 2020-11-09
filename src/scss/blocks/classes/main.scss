@@ -1,0 +1,116 @@
+.content {
+    .classes-wrap {
+        padding: 100px 20px;
+
+        .container {
+            margin-bottom: 30px;
+
+            .row {
+                .col-lg-3.col-md-6 {
+                  a {
+                    transition: all 0.5s;
+            
+                    .card {
+                      border: none;
+                      background: rgba(255, 255, 255, 0);
+                      cursor: pointer;
+                      transition: all 0.5s;
+            
+                      img {
+                        border-radius: 10px;
+                      }
+            
+                      .card-body {
+                        padding: 32px 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        text-align: start;
+            
+                        .card-title {
+                          margin-bottom: 22px;
+                          min-height: 50px;
+                        }
+            
+                        .card-body_bottom {
+                          display: flex;
+                          flex-direction: column;
+                         
+            
+                          .card-info {
+                            margin-bottom: 15px;
+            
+                            &:last-child {
+                              margin-bottom: 0;
+                            }
+            
+                            .far,
+                            .fas {
+                              color: $blue;
+                              margin-right: 12px;
+                              font-size: 13px;
+                            }
+            
+                            span {
+                              color: $light-gray;
+                            }
+                          }
+            
+                          .card-text {
+                            margin-top: 25px;
+                          }
+                        }
+                      }
+                    }
+            
+                    &:hover {
+                      text-decoration: none;
+                    }
+                  }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .content {
+        .classes-wrap {
+            padding: 50px 20px;
+
+                .container {
+                    .row {
+                        .col-md-6 {
+                        .card {
+                            img {
+                            width: 100%;
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content {
+        .classes-wrap {
+            padding: 50px 20px;
+
+            .container {
+                .row {
+                    .col-md-6 {
+                        .card {
+                            img {
+                            width: 100%;
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+mixin single-class(img, cardTitle, infoTime, infoInstructor, infoLevel, cardText)
+    a(href="class.html")
+        .card
+            img(src="./../../img/classes/" + img, alt ="class")
+            .card-body
+                h5.card-title
+                    | #{cardTitle}
+                .card-body_bottom
+                    .card-info
+                        i.far.fa-clock
+                        span.info-time
+                            | #{infoTime}
+                    .card-info
+                        i.fas.fa-user
+                        span.info-instructor
+                            | #{infoInstructor}
+                    .card-info
+                        i.fas.fa-level-up-alt
+                        span.info-level
+                            | #{infoLevel}
+                    p.card-text
+                        | #{cardText}
