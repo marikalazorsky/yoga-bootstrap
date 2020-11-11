@@ -1,7 +1,24 @@
 extends ./../layouts/main.pug
+include ./../mixins/pricing-card.pug
 
 block variables 
     - const title = "Pricing";
 
 block header-content
-    h2 Pricing
+    h2 Our pricing
+    span Whether you seek a long-term commitment or drop-in session, find a studio and rate that works for you. We have membership and class package options that are as diverse as our classes.
+
+block body-content
+    .pricing-wrap.wrap
+        .container
+            .row
+                +pricing-card('19', 'One', 'Walk-In Rate', 'Meant for the occassional practictioner! These classes NEVER expire!')
+                +pricing-card('59', '5', '5 Class Pass', 'Meant for the occassional practictioner! These classes NEVER expire!')
+                +pricing-card('99', '10', '10 Class Pass', 'Meant for the occassional practictioner! These classes NEVER expire!')
+                +pricing-card('179', '20', '20 Class Pass', 'Meant for the occassional practictioner! These classes NEVER expire!')
+
+    .classes
+        .classes-wrap.wrap
+            .classes-top.text-center
+                h2 Related Classes
+                include ./../sections/classes-section.pug
