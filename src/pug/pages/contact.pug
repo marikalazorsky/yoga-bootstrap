@@ -4,5 +4,25 @@ block variables
     - const title = "Contact";
 
 block header-content
-    h2 Contact
+    h2 Contact us
+    span Whether you’re looking for answers, would like to solve a problem, or just want to let us know how we did, you’ll find many ways to contact us right here.
 
+block body-content
+    .contact-wrap.wrap
+        .container
+            .row
+                .col-lg-6
+                    form
+                        input(type="text" id="name" name="name" placeholder="Name")
+                        input(type="email" id="email" name="email" placeholder="Email")
+                        input(type="tel" id="phone" name="phone" placeholder="Phone")
+                        input(type="text" id="subject" name="subject" placeholder="Subject")
+                        textarea(name="message", id="message", placeholder="Message", cols="30", rows="10")
+                    button.btn.btn-primary
+                        span send message
+                .col-lg-6.map-info
+                    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.6936676170544!2d144.94627951590437!3d-37.82064364221129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4cee0cec83%3A0xd019c5f69915a4a0!2sCollins%20St%2C%20West%20Melbourne%20VIC%203003%2C%20Australien!5e0!3m2!1sde!2sde!4v1605103387774!5m2!1sde!2sde' width='400' height='300' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+                    span Newyork Studio
+                    p PO Box 16122 Collins Street West, Victoria 8007 Australia
+                    a(href='mailto:Alitstudios@gmai.com') Alitstudios@gmai.com
+                    a(href='tel:+61383766284') +61 3 8376 6284
