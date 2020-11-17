@@ -75,22 +75,8 @@ header {
                         
                         
                         iframe {
-                            //width: 570px;
-                            //height: 350px;
                             border-radius: 7px;
                         }
-
-                        #videoPlayBtn {
-                            width: 100%;
-                            height: 100%;
-                            z-index: 1000;
-                            position: absolute;
-                            top: 0;
-                            right: 7px;
-                            cursor: pointer;
-                            background: url(../../img/class/play-btn.png) center no-repeat;
-                            background-size: 15%;
-                          }
                     }
                 }
             }
