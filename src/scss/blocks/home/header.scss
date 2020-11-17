@@ -106,16 +106,20 @@ header {
   header {
     .header-wrap {
       .header-menu {
-        .navbar-expand {
-          .navbar-collapse {
-            ul {
-              li {
-                a {
-                  font-size: 14px;
+        .navbar-expand-md {
+            .navbar-collapse {
+              ul {
+                li {
+                  a {
+                    font-size: 14px;
+                  } 
+                  
+                  &:after {
+                  width: 28%;
+                  }
                 }
               }
             }
-          }
         }
       }
 
@@ -157,3 +161,22 @@ header {
     }
   }
 }
+
+
+@media only screen and (max-width: 380px) {
+  header {
+    .header-wrap {
+      .header-menu {
+        .navbar-expand-md {
+            .navbar-collapse {
+              ul {
+                li:after {
+                  width: 33%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
